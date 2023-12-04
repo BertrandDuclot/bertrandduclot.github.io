@@ -246,7 +246,10 @@ a:link {
   background-color: #11b3c9;
   border: none;
   color: white;
-  padding: 10px 24px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
   cursor: pointer;
 }
 
@@ -254,7 +257,10 @@ a:link {
   background-color: #a5afab;
   border: none;
   color: white;
-  padding: 10px 33px;
+  padding: 10px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
   cursor: pointer;
 }
 

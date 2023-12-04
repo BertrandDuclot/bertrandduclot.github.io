@@ -27,6 +27,14 @@ html {
   font-size: 40px;
 }
 
+.ongoing {
+  border: none;
+  text-decoration: none;
+  border-radius: 40px;
+  padding: 5px;
+  background-color: #aed1f8;
+}
+
 h1 {
   display: inline;
   border-bottom: 1px solid #72c3c9;
@@ -153,7 +161,7 @@ a:link {
 }
 
 .subtitles {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: #7e8081;
 }
 

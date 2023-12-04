@@ -226,11 +226,10 @@ a:link {
 }
 
 .link-container {
-  margin: 1rem 0rem 1rem auto;
+  margin: 1rem 3rem 1rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*flex-wrap: wrap;*/
 }
 
 .link-container > * {
@@ -325,5 +324,17 @@ footer {
   .upcoming-project {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .description-project-container {
+  }
+
+  .link-container {
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+  .link-container > * {
+    margin-top: 1rem;
   }
 }

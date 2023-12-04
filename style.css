@@ -1,0 +1,366 @@
+/* Notes à faire:
+
+Autres  idées:
+- import @
+- Mode Eng/FR
+- zoom
+- jour/nuit
+- livres d'informatique en cours de Lecture
+
+Importants :
+- Police de caractère
+- Photo
+- Typewriter
+- CV à télécharger : https://dev.to/erdeepbag/create-direct-download-link-from-github-files-35n7#:~:text=You%20can%20create%20direct%20download,this%20link%20for%20web%20development.
+- mise en forme code
+- animations
+- projet en cours : bulle + lien github
+-->> TAILLE BOUTONS GIT
+-->> Nav BAR : https://codepen.io/Abdel-fattah/pen/gMXOaZ
+
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: garamond, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.projects-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* A VOIR SI SUPPRIMER */
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects {
+}
+
+/* Typewriter effect */
+
+/* Typewriter end */
+
+.title-my-projects,
+.cv-title {
+  font-size: 40px;
+}
+
+h1 {
+  display: inline;
+  border-bottom: 1px solid #72c3c9;
+}
+
+.projects-title {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.main-page {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+}
+
+.main-page-content {
+}
+
+/* Navigation bar */
+
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  border-bottom: #5e5858 0.1px solid;
+  font-size: 22px;
+}
+
+.sticky {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-bar a {
+  margin: 1.5rem;
+  text-decoration: none;
+  color: #746f63;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navigation-bar > a:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+/* Body */
+
+.main-page {
+  background: linear-gradient(-45deg, #ece9e0, #b1e4f5, #c3ece3);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* main page */
+
+#showcase {
+  background-position: center;
+  background-color: #92eefa;
+  text-align: center;
+  margin: 0;
+}
+.read-button {
+  font-size: 20px;
+  text-decoration: none;
+  border: #746f63 1px solid;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 4vh auto;
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.read-button:hover,
+.cv-link:hover {
+  /*ackground-color: #e6e1e1;*/
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+/* Header */
+
+.welcome {
+  margin: 2rem;
+  font-size: 25px;
+}
+
+.links {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.links > a {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+/* Projects */
+
+.title-my-projects {
+  /*text-align: center;*/
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.subtitles {
+  margin-top: 0.5rem;
+  color: #7e8081;
+}
+
+.upcoming-project {
+  margin: 0.5rem 5rem 3rem 5rem;
+  font-weight: bold;
+  color: #7e8081;
+  font-size: 18px;
+  border: #c1d3d8 1px solid;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: wait;
+}
+
+.description {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 30px;
+}
+
+/* Main */
+
+/* All projects */
+
+.projects-page {
+  margin-bottom: 0;
+}
+
+.allprojects {
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 5px 5px rgb(202, 228, 236);
+  display: flex;
+  border-radius: 5px;
+  margin-top: 2rem;
+  background-color: #edf9fc;
+  /*min-width: 20rem; A VOIR */
+}
+
+.description-project-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-project {
+  margin-bottom: 0.5rem;
+}
+
+.description-projet {
+  margin-top: 1rem;
+}
+
+.interest {
+  margin-top: 0.5rem;
+  color: #5e5858;
+}
+
+.frontend {
+  margin-bottom: 2rem;
+}
+
+.link-container {
+  margin: 1rem 0rem 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-container > * {
+  max-height: 2.5rem;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.link-project {
+  background-color: #11b3c9;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.link-git {
+  background-color: #a5afab;
+  border: none;
+  color: white;
+  padding: 10px 34px;
+  cursor: pointer;
+}
+
+.link-project:hover {
+  background-color: #a5afab;
+}
+
+.link-git:hover {
+  background-color: #11b3c9;
+}
+
+/* Frontend */
+
+/* Backend */
+
+.backend {
+  margin-bottom: 2rem;
+}
+
+/* CV */
+
+.cv-page {
+  background-color: #ece9e0;
+  min-height: 15rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  /*justify-content: center;*/
+  align-items: center;
+  flex-direction: column;
+}
+
+.cv-title {
+  margin-top: 5vh;
+}
+
+.cv-link {
+  font-size: 20px;
+  text-decoration: none;
+  border: #746f63 1px solid;
+  border-radius: 40px;
+  padding: 20px;
+  margin: 4vh auto;
+  min-width: 200px;
+  max-width: 200px;
+  cursor: pointer;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 5vh;
+}
+
+/* Footer */
+
+footer {
+  background-color: #e6dfcf;
+  width: 100%;
+  min-height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+/*
+@media (max-width: 300px) {
+  * {
+    color: blue;
+  }
+
+
+  .welcome {
+    margin: 2rem;
+    text-orientation: upright;
+  }
+
+
+  .allprojects {
+  }
+
+  .cv-page {
+    height: 100vh;
+  }
+
+  footer {
+    height: 50vh;
+  }
+
+  .link-container {
+    margin: 1rem 0rem 1rem auto;
+  }
+}
+*/

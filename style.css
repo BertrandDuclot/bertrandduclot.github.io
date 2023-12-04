@@ -35,6 +35,10 @@ html {
   background-color: #aed1f8;
 }
 
+.ongoing > a {
+  color: black;
+}
+
 h1 {
   display: inline;
   border-bottom: 1px solid #72c3c9;
@@ -250,7 +254,7 @@ a:link {
   background-color: #a5afab;
   border: none;
   color: white;
-  padding: 10px 34px;
+  padding: 10px 35px;
   cursor: pointer;
 }
 

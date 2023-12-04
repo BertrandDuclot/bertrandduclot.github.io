@@ -1,10 +1,12 @@
+@import url("https://fonts.cdnfonts.com/css/garamond");
+
 html {
   scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
-  font-family: garamond, Helvetica, sans-serif;
+  font-family: "Garamond", sans-serif;
   margin: 0;
   padding: 0;
 }

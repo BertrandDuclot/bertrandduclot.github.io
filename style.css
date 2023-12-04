@@ -230,6 +230,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
+  /*flex-wrap: wrap;*/
 }
 
 .link-container > * {
@@ -311,4 +312,18 @@ footer {
   align-items: center;
   flex-direction: column;
   line-height: 30px;
+}
+
+/* Media query */
+
+@media (max-width: 800px) {
+  .projects {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .upcoming-project {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
